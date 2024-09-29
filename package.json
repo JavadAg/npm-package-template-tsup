@@ -1,0 +1,40 @@
+{
+  "name": "npm-package-template-tsup",
+  "version": "1.0.0",
+  "description": "npm package template with tsup and release-it",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup ./src",
+    "release": "release-it"
+  },
+  "homepage": "",
+  "email": "j.aghebati@gmail.com",
+  "keywords": [
+    "package",
+    "release-it",
+    "npm",
+    "tsup",
+    "typescript",
+    "esbuild",
+    "template"
+  ],
+  "author": "javad aghebati",
+  "license": "MIT",
+  "devDependencies": {
+    "release-it": "^17.6.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "release-it": {
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "github": {
+      "release": true
+    }
+  }
+}
